@@ -11,4 +11,4 @@
 
 编译：安装 Seeed nRF52 Boards 1.1.13、Seeed_GFX2 1.0.0；打开 `firmware/page_turner/page_turner.ino`，选择 **Seeed XIAO nRF52840 Plus**，上传。
 
-验证状态：编译、烧录、蓝牙广播已通过；四方向 HID 固件已编译并烧录，并修正了滑动结束时的坐标判断；用户实测已通过：iPad Air 11 英寸（M3）“图书”左右翻页、iPhone 13“图书”左右翻页、本机电脑 PowerPoint 左右上下操作。系统及应用版本未记录，“图书”的上下操作未验证。其他设备和应用、断线重连及电池续航仍待验证。部分阅读器只接受 Page Up/Page Down 或厂商专用协议。
+验证状态：编译、烧录、蓝牙广播已通过；四方向 HID 固件已编译并烧录，并修正了滑动结束时的坐标判断；用户实测已通过：iPad Air 11 英寸（M3）“图书”左右翻页、iPhone 13“图书”左右翻页、联想 ThinkBook 16 G7+ IAH（21TL），Windows 11 家庭中文版 25H2（内部版本 26200.9457），PowerPoint 左右上下操作。本机型号和系统版本已读取确认；PowerPoint、iOS、iPadOS 及“图书”应用版本未记录，“图书”的上下操作未验证。其他设备和应用、断线重连及电池续航仍待验证。部分阅读器只接受 Page Up/Page Down 或厂商专用协议。

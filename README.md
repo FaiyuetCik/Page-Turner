@@ -27,9 +27,9 @@ Hardware tests reported by the project owner on 2026-09-28:
 | --- | --- | --- | --- |
 | iPad Air 11-inch (M3) | Apple Books | Left / Right page turning | Passed |
 | iPhone 13 | Apple Books | Left / Right page turning | Passed |
-| Local computer | Microsoft PowerPoint | Left / Right / Up / Down control | Passed |
+| Lenovo ThinkBook 16 G7+ IAH (21TL), Windows 11 Home China 25H2 | Microsoft PowerPoint | Left / Right / Up / Down control | Passed |
 
-OS and app versions were not recorded for these tests. Up / Down operation in Apple Books was not reported as tested. These results confirm the listed combinations and operations, rather than every app on those devices.
+The computer model and OS were read from the tested machine: Lenovo ThinkBook 16 G7+ IAH (21TL), Windows 11 Home China 25H2, build 26200.9457. PowerPoint, iOS, iPadOS, and Apple Books versions were not recorded. Up / Down operation in Apple Books was not reported as tested. These results confirm the listed combinations and operations, rather than every app on those devices.
 
 ### Requirements and limits
 
