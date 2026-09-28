@@ -1,6 +1,6 @@
 # Page Turner
 
-A Bluetooth presentation clicker for the Seeed XIAO nRF52840 Plus 1.47-inch display. This is a separate successor to the Desk Pixel weather-clock prototype; the original is retained for rollback.
+Page Turner is a standalone Bluetooth page-turning and presentation remote for the Seeed XIAO nRF52840 Plus 1.47-inch touch display, created by FaiyuetCik.
 
 ## Controls
 
@@ -44,8 +44,8 @@ Other device/app combinations, including Android, macOS, other reading or presen
 ## Connection
 
 1. Power the board through USB-C. For cordless use, connect a compatible 3.7 V LiPo cell to the board's JST 2.0 battery connector, following Seeed's polarity guidance.
-2. In the target device's Bluetooth settings, pair **Page Turner** as a keyboard. See the compatibility section above for tested device/app combinations. If this board was previously paired as **Desk Pixel**, remove that older pairing first, since the BLE address is unchanged but the service has changed.
-3. Focus a presentation or PDF and enter its presentation mode. USR1 sends Left Arrow; USR2 sends Right Arrow; swipe up or down on the touchscreen to send Up or Down Arrow. The effect of each arrow key depends on the focused app. There is no companion app or weather service.
+2. In the target device's Bluetooth settings, pair **Page Turner** as a keyboard. See the compatibility section above for tested device/app combinations.
+3. Focus a presentation or PDF and enter its presentation mode. USR1 sends Left Arrow; USR2 sends Right Arrow; swipe up or down on the touchscreen to send Up or Down Arrow. The effect of each arrow key depends on the focused app. No companion app is required.
 
 The board does not include a laser emitter or a 2.4 GHz USB receiver. The USB-C cable currently supplies power and serial only; slide control is via Bluetooth.
 
@@ -59,7 +59,9 @@ Previously recorded verification: the four-direction HID firmware was compiled a
 
 Reconnection behavior and battery runtime still need testing. The current firmware has no idle backlight dimming or application-level sleep logic.
 
-The `page_turner.ino.zip` file contains a firmware binary, a `.dat` file, and a manifest; it is not an archive of the Arduino source. Its correspondence to the current source has not been verified. Use `firmware/page_turner/page_turner.ino` for source-based builds.
+The current source was rebuilt on 2026-09-28 with Seeed nRF52 Boards 1.1.13 and Seeed_GFX2 1.0.0 after setting the BLE manufacturer information to `FaiyuetCik`. Compilation passed: 164468 bytes of program storage and 14996 bytes of global RAM. This build has not been flashed or hardware-tested; the device/app results above describe the previously tested firmware.
+
+The `page_turner.ino.zip` file was regenerated from this build and contains a firmware binary, a `.dat` file, and a manifest. It is a DFU firmware package, not an archive of the Arduino source. Use `firmware/page_turner/page_turner.ino` for source-based builds.
 
 ## Why Bluetooth HID?
 

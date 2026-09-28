@@ -153,7 +153,7 @@ void setup() {
   Bluefruit.setTxPower(4);
   Bluefruit.Periph.setConnectCallback(onConnect);
   Bluefruit.Periph.setDisconnectCallback(onDisconnect);
-  deviceInfo.setManufacturer("Desk Pixel contributors");
+  deviceInfo.setManufacturer("FaiyuetCik");
   deviceInfo.setModel("Page Turner");
   deviceInfo.begin();
   hid.begin();
