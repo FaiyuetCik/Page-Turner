@@ -1,3 +1,7 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 FaiyuetCik (project-specific additions)
+// BLE advertising setup follows the Adafruit Bluefruit HID keyboard example.
+// Upstream attribution and notices: ../../THIRD_PARTY_NOTICES.md.
 /* Page Turner - BLE HID slide remote for XIAO nRF52840 Plus 1.47" display.
  * USR1: previous page (Left Arrow). USR2: next page (Right Arrow).
  * Swipe up/down on the touch screen to send Up/Down Arrow.
@@ -153,7 +157,9 @@ void setup() {
   Bluefruit.setTxPower(4);
   Bluefruit.Periph.setConnectCallback(onConnect);
   Bluefruit.Periph.setDisconnectCallback(onDisconnect);
-  deviceInfo.setManufacturer("FaiyuetCik");
+  // Omit the optional manufacturer field; the board is identified in README.
+  // BLEDis defaults to Adafruit, so clear it explicitly before begin().
+  deviceInfo.setManufacturer(nullptr, 0);
   deviceInfo.setModel("Page Turner");
   deviceInfo.begin();
   hid.begin();

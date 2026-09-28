@@ -1,6 +1,6 @@
 # Page Turner
 
-Page Turner is a standalone Bluetooth page-turning and presentation remote for the Seeed XIAO nRF52840 Plus 1.47-inch touch display, created by FaiyuetCik.
+Page Turner is a standalone Bluetooth page-turning and presentation remote for the Seeed XIAO nRF52840 Plus 1.47-inch touch display, maintained by FaiyuetCik. The board and display hardware are made by Seeed Studio.
 
 ## Controls
 
@@ -59,9 +59,9 @@ Previously recorded verification: the four-direction HID firmware was compiled a
 
 Reconnection behavior and battery runtime still need testing. The current firmware has no idle backlight dimming or application-level sleep logic.
 
-The current source was rebuilt on 2026-09-28 with Seeed nRF52 Boards 1.1.13 and Seeed_GFX2 1.0.0 after setting the BLE manufacturer information to `FaiyuetCik`. Compilation passed: 164468 bytes of program storage and 14996 bytes of global RAM. This build has not been flashed or hardware-tested; the device/app results above describe the previously tested firmware.
+The current source was rebuilt on 2026-09-28 with Seeed nRF52 Boards 1.1.13 and Seeed_GFX2 1.0.0 after explicitly omitting the optional BLE manufacturer characteristic. The BLE device name and model remain `Page Turner`. Compilation passed. See [BUILDING.md](BUILDING.md) for the source snapshot and rebuild details. This build has not been flashed or hardware-tested; the device/app results above describe the previously tested firmware.
 
-The `page_turner.ino.zip` file was regenerated from this build and contains a firmware binary, a `.dat` file, and a manifest. It is a DFU firmware package, not an archive of the Arduino source. Use `firmware/page_turner/page_turner.ino` for source-based builds.
+The `page_turner.ino.zip` file was regenerated from this build. It contains the DFU firmware binary, `.dat` file and manifest, plus the application source, corresponding dependency source, licenses and rebuild instructions. Use `firmware/page_turner/page_turner.ino` for normal source-based builds. Retain the accompanying sources and notices when redistributing the firmware.
 
 ## Why Bluetooth HID?
 
@@ -71,4 +71,4 @@ Product references: [Logitech R500s](https://www.logitech.com/pt-br/shop/p/r500s
 
 ## License
 
-MIT; see [LICENSE](LICENSE). Copyright 2026 FaiyuetCik.
+Original Page Turner application additions and documentation are licensed under MIT; see [LICENSE](LICENSE). Copyright 2026 FaiyuetCik. Adapted Adafruit example portions retain their original attribution. Third-party libraries and firmware components retain their own copyrights and licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This project does not claim ownership of Seeed hardware or third-party code and is not an official product of those suppliers.

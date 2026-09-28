@@ -1,0 +1,2 @@
+# Preserve upstream license and reference files verbatim.
+third_party/** -text -whitespace
