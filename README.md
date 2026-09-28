@@ -69,4 +69,4 @@ Product references: [Logitech R500s](https://www.logitech.com/pt-br/shop/p/r500s
 
 ## License
 
-MIT; see [LICENSE](LICENSE). Copyright 2026 Desk Pixel contributors.
+MIT; see [LICENSE](LICENSE). Copyright 2026 FaiyuetCik.
