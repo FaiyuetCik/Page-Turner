@@ -59,7 +59,7 @@ Previously recorded verification: the four-direction HID firmware was compiled a
 
 Reconnection behavior and battery runtime still need testing. The current firmware has no idle backlight dimming or application-level sleep logic.
 
-The current source was rebuilt on 2026-09-28 with Seeed nRF52 Boards 1.1.13 and Seeed_GFX2 1.0.0 after explicitly omitting the optional BLE manufacturer characteristic. The BLE device name and model remain `Page Turner`. Compilation passed. See [BUILDING.md](BUILDING.md) for the source snapshot and rebuild details. This build has not been flashed or hardware-tested; the device/app results above describe the previously tested firmware.
+The current source was rebuilt on 2026-09-28 with Seeed nRF52 Boards 1.1.13 and Seeed_GFX2 1.0.0 with the BLE manufacturer set to `Seeed Studio` to identify the board and display hardware maker. The BLE device name and model remain `Page Turner`. Compilation passed. See [BUILDING.md](BUILDING.md) for the source snapshot and rebuild details. This build has not been flashed or hardware-tested; the device/app results above describe the previously tested firmware.
 
 The `page_turner.ino.zip` file was regenerated from this build. It contains the DFU firmware binary, `.dat` file and manifest, plus the application source, corresponding dependency source, licenses and rebuild instructions. Use `firmware/page_turner/page_turner.ino` for normal source-based builds. Retain the accompanying sources and notices when redistributing the firmware.
 
@@ -71,4 +71,4 @@ Product references: [Logitech R500s](https://www.logitech.com/pt-br/shop/p/r500s
 
 ## License
 
-Original Page Turner application additions and documentation are licensed under MIT; see [LICENSE](LICENSE). Copyright 2026 FaiyuetCik. Adapted Adafruit example portions retain their original attribution. Third-party libraries and firmware components retain their own copyrights and licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This project does not claim ownership of Seeed hardware or third-party code and is not an official product of those suppliers.
+Original Page Turner application additions and documentation are licensed under MIT; see [LICENSE](LICENSE). Copyright 2026 FaiyuetCik. Adapted Adafruit example portions retain their original attribution. Third-party libraries and firmware components retain their own copyrights and licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The Seeed board and display are Seeed Studio products; the Page Turner application is maintained by FaiyuetCik. Hardware and third-party code retain their respective ownership.

@@ -1,6 +1,6 @@
 # Third-party attribution and license scope
 
-Page Turner is maintained by **FaiyuetCik**. Its target board and display hardware are made by **Seeed Studio**. This is an independent application project, not an official Seeed Studio or Adafruit product.
+Page Turner is maintained by **FaiyuetCik**. Its target board and display hardware are made by **Seeed Studio**. The board and display are Seeed Studio products. The BLE manufacturer field is `Seeed Studio`, identifying that hardware manufacturer; application maintainer and third-party software credits are listed separately below.
 
 The root [LICENSE](LICENSE) applies to the original Page Turner application additions and documentation. It does not transfer ownership of the hardware, libraries, fonts, SDK, runtime or upstream examples to the project maintainer. Third-party portions retain their original copyrights and licenses.
 

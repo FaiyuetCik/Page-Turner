@@ -25,9 +25,9 @@ The source snapshot is limited to the actual application dependency trees, rathe
 
 ## Packaged build verification
 
-The current build was compiled on 2026-09-28 after explicitly omitting the optional BLE Manufacturer Name characteristic. The paired device name and model remain `Page Turner`. This build has not been flashed or hardware-tested; README compatibility results describe prior hardware tests.
+The current build was compiled on 2026-09-28 with the BLE Manufacturer Name set to `Seeed Studio` to identify the hardware maker. The paired device name and model remain `Page Turner`. This build has not been flashed or hardware-tested; README compatibility results describe prior hardware tests.
 
-Source SHA-256: 50431205b4e34cad7a171b7dc29a40e995a6120fecf905c2faef3fb7dc3f8a96
+Source SHA-256: 586bcb115bc9b6e82310c41ecefd2ad21e2f76c8ea4d2ecea93aa8cc12039fbc
 
 Corresponding dependency source archive SHA-256: 39cc1d67b9a7cf6d2cc6217c9058d5f8290704f525a50f249d1ed94bba54e41f
 

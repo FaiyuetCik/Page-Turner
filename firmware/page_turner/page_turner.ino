@@ -157,9 +157,8 @@ void setup() {
   Bluefruit.setTxPower(4);
   Bluefruit.Periph.setConnectCallback(onConnect);
   Bluefruit.Periph.setDisconnectCallback(onDisconnect);
-  // Omit the optional manufacturer field; the board is identified in README.
-  // BLEDis defaults to Adafruit, so clear it explicitly before begin().
-  deviceInfo.setManufacturer(nullptr, 0);
+  // Identify the manufacturer of the Seeed board and display hardware.
+  deviceInfo.setManufacturer("Seeed Studio");
   deviceInfo.setModel("Page Turner");
   deviceInfo.begin();
   hid.begin();
